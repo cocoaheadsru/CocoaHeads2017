@@ -1,0 +1,59 @@
+body {
+  @include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.bg-black {
+  background-color: $black !important;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+
+// Custom Horizontal Rule with Star Icon
+hr.star-light,
+hr.star-dark {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+hr.star-light:after,
+hr.star-dark:after {
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: 's';
+  // font-family: FontAwesome;
+  font-size: 2em;
+}
+
+hr.star-light {
+  border-color: $white;
+}
+hr.star-light:after {
+  color: $white;
+  background-color: $primary;
+}
